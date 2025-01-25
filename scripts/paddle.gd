@@ -16,7 +16,6 @@ func _physics_process(delta: float) -> void:
 		velocity.y = direction * SPEED
 		if position.y > screen_size.y - PADDLE_HEIGHT/2 and Input.is_action_pressed("ui_down") or position.y < PADDLE_HEIGHT/2 and Input.is_action_pressed("ui_up"):
 			velocity.y = 0
-			print(position.y)
 	else:
 		velocity.y = 0
 		

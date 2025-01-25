@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://dt40rn628q6cx"]
+[gd_scene load_steps=3 format=3 uid="uid://dt40rn628q6cx"]
 
 [ext_resource type="PackedScene" uid="uid://ddsnbe4r4gwqr" path="res://scenes/paddle.tscn" id="1_m1qxp"]
+[ext_resource type="PackedScene" uid="uid://didv2fa4fx6nq" path="res://scenes/wall.tscn" id="2_88qi8"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Paddle" parent="." instance=ExtResource("1_m1qxp")]
+
+[node name="Wall" parent="." instance=ExtResource("2_88qi8")]
+
+[node name="Wall2" parent="." instance=ExtResource("2_88qi8")]
+position = Vector2(0, 630)

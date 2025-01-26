@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5m6d1"]
 size = Vector2(24, 78)
 
-[node name="Paddle" type="CharacterBody2D"]
+[node name="Paddle" type="CharacterBody2D" groups=["Paddle"]]
 material = SubResource("CanvasItemMaterial_3xae6")
 position = Vector2(53, 301)
 script = ExtResource("1_1cct7")

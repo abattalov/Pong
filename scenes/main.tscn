@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dt40rn628q6cx"]
+[gd_scene load_steps=5 format=3 uid="uid://dt40rn628q6cx"]
 
 [ext_resource type="PackedScene" uid="uid://ddsnbe4r4gwqr" path="res://scenes/paddle.tscn" id="1_m1qxp"]
 [ext_resource type="PackedScene" uid="uid://didv2fa4fx6nq" path="res://scenes/wall.tscn" id="2_88qi8"]
+[ext_resource type="PackedScene" uid="uid://qas3rouxbjep" path="res://scenes/divider.tscn" id="3_ggt8a"]
+[ext_resource type="PackedScene" uid="uid://c74am4vaqoo6x" path="res://scenes/ball.tscn" id="4_wt0eg"]
 
 [node name="Main" type="Node2D"]
 
@@ -11,3 +13,10 @@
 
 [node name="Wall2" parent="." instance=ExtResource("2_88qi8")]
 position = Vector2(0, 630)
+
+[node name="Divider" parent="." instance=ExtResource("3_ggt8a")]
+modulate = Color(1, 1, 1, 0.333333)
+position = Vector2(-5, 0)
+
+[node name="Ball" parent="." instance=ExtResource("4_wt0eg")]
+position = Vector2(577, 298)

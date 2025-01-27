@@ -3,7 +3,7 @@ extends RigidBody2D
 const SPEED = 400.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	var direction = Vector2(-1,1).normalized()
+	var direction = Vector2(get_random_integer(),1).normalized()
 	linear_velocity = direction * SPEED
 
 
@@ -24,3 +24,6 @@ func _on_body_entered(body: Node) -> void:
 		linear_velocity = linear_velocity.rotated(0.05)
 		
 	linear_velocity = linear_velocity.normalized() * SPEED
+	
+func get_random_integer():
+	return randi_range(0, 1) * 2 - 1 
